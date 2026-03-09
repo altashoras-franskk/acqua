@@ -1,0 +1,11 @@
+{
+  "name": "acqua",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "build": "node -e \"console.log('No build step for V1 prototype')\"",
+    "preview": "node server.mjs"
+  }
+}
