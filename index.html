@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aqua Box V1</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Aqua Box V1 (CAS)</h1>
+        <p>Plantar, nutrir, podar e reproduzir plantas de forma procedural.</p>
+      </header>
+
+      <section class="controls">
+        <label>Luz <input id="light" type="range" min="0.2" max="1.6" step="0.05" value="1" /></label>
+        <label>CO2 <input id="co2" type="range" min="0" max="2" step="0.05" value="0.7" /></label>
+        <label>Nutriente <input id="nutrient" type="range" min="0" max="2" step="0.05" value="0.8" /></label>
+        <button id="seedPlant">Comprar/Plantar muda</button>
+        <button id="trim">Podar seleção</button>
+        <button id="sellFloating">Vender flutuantes</button>
+      </section>
+
+      <section class="hud">
+        <div><strong>Coins:</strong> <span id="coins">0</span></div>
+        <div><strong>Plantas:</strong> <span id="plantCount">0</span></div>
+        <div><strong>Saúde média:</strong> <span id="avgHealth">0</span></div>
+        <div><strong>Biomassa:</strong> <span id="biomass">0</span></div>
+      </section>
+
+      <canvas id="tank" width="960" height="540" aria-label="Aquário"></canvas>
+      <p class="hint">Clique no aquário para selecionar uma planta. Mouse wheel = zoom, drag = mover câmera.</p>
+    </div>
+  </body>
+</html>
